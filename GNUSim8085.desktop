@@ -7,6 +7,6 @@ Icon=gnusim8085_icon.png
 Terminal=false
 Type=Application
 Encoding=UTF-8
-Categories=Utility;Application;
+Categories=GTK;GNOME;Utility;Emulator;
 # vi: encoding=utf-8
 
