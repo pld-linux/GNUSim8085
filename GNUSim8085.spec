@@ -2,7 +2,7 @@ Summary:	Graphical simulator for the Intel 8085 microprocessor
 Summary(pl):	Graficzny symulator mikroprocesora Intel 8085
 Name:		GNUSim8085
 Version:	1.2.89
-Release:	1
+Release:	2
 License:	GPL
 Group:		Applications/Engineering
 Source0:	http://dl.sourceforge.net/gnusim8085/%{name}-%{version}.tar.bz2
@@ -10,8 +10,12 @@ Source0:	http://dl.sourceforge.net/gnusim8085/%{name}-%{version}.tar.bz2
 Source1:	%{name}.desktop
 Patch0:		%{name}-link.patch
 URL:		http://sourceforge.net/projects/gnusim8085/
+BuildRequires:	automake
+BuildRequires:	autoconf
+BuildRequires:	gettext-devel
 BuildRequires:	gtk+2-devel >= 2.0
 BuildRequires:	libgnomeui-devel >= 2.0
+BuildRequires:	libiconv-devel
 BuildRequires:	pkgconfig
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -28,6 +32,10 @@ dla mikroprocesora Intel 8085.
 %patch0 -p1
 
 %build
+%{__gettextize}
+%{__aclocal}
+%{__automake}
+%{__autoconf}
 %configure
 %{__make}
 
