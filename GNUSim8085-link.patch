@@ -3,8 +3,9 @@
 @@ -297,7 +297,6 @@
  
  gnusim8085_LDADD = \
- 	$(GNOME_LIBS)\
+-	$(GNOME_LIBS)\
 -	 -liconv
++	$(GNOME_LIBS)
  
  subdir = src
  ACLOCAL_M4 = $(top_srcdir)/aclocal.m4
