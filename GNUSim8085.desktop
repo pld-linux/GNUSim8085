@@ -1,0 +1,12 @@
+[Desktop Entry]
+Name=GNUSim8085
+Comment=GNUSim8085 - 8085 Microprocessor simulator
+Comment[pl]=GNUSim8085 - Symulator Mikroprocesora 8085
+Exec=gnusim8085
+Icon=gnusim8085_icon.png
+Terminal=false
+Type=Application
+Encoding=UTF-8
+Categories=Utility;Application;
+# vi: encoding=utf-8
+
