@@ -1,11 +1,27 @@
---- GNUSim8085-1.2.89/src/Makefile.am.orig	2004-02-01 21:30:01.000000000 +0100
-+++ GNUSim8085-1.2.89/src/Makefile.am	2004-02-01 22:28:03.000000000 +0100
-@@ -297,7 +297,6 @@
+--- GNUSim8085-1.2.89/src/Makefile.am.orig	2003-12-30 17:06:32.000000000 +0100
++++ GNUSim8085-1.2.89/src/Makefile.am	2004-02-15 21:18:46.044207512 +0100
+@@ -8,14 +8,10 @@
+ 	$(GNOME_CFLAGS)
  
- gnusim8085_LDADD = \
+ gnusim8085_CFLAGS =\
+-	 -Wall\
+-	 -O1\
+-	 -g
++	 -Wall
+ 
+ gnusim8085_CXXFLAGS =\
+-	 -Wall\
+-	 -O1\
+-	 -g
++	 -Wall
+ 
+ bin_PROGRAMS = gnusim8085
+ 
+@@ -135,6 +131,5 @@
+ gnusim8085_LDFLAGS = 
+ 
+ gnusim8085_LDADD =  \
 -	$(GNOME_LIBS)\
 -	 -liconv
 +	$(GNOME_LIBS)
  
- subdir = src
- ACLOCAL_M4 = $(top_srcdir)/aclocal.m4
