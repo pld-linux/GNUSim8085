@@ -13,7 +13,7 @@ URL:		http://sourceforge.net/projects/gnusim8085/
 BuildRequires:	automake
 BuildRequires:	autoconf
 BuildRequires:	gettext-devel
-BuildRequires:	gtk+2-devel >= 2.0
+BuildRequires:	gtk+2-devel >= 1:2.0
 BuildRequires:	libgnomeui-devel >= 2.0
 BuildRequires:	pkgconfig
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
