@@ -1,0 +1,10 @@
+--- GNUSim8085-1.2.89/src/Makefile.in.orig	2004-02-01 21:30:01.000000000 +0100
++++ GNUSim8085-1.2.89/src/Makefile.in	2004-02-01 22:28:03.000000000 +0100
+@@ -297,7 +297,6 @@
+ 
+ gnusim8085_LDADD = \
+ 	$(GNOME_LIBS)\
+-	 -liconv
+ 
+ subdir = src
+ ACLOCAL_M4 = $(top_srcdir)/aclocal.m4
