@@ -41,7 +41,7 @@ dla mikroprocesora Intel 8085.
 
 %install
 rm -rf $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT{%{_desktopdir},%{_pixmapsdir}}
+install -d $RPM_BUILD_ROOT{%{_desktopdir},%{_pixmapsdir},%{_mandir}/man1}
 install -d $RPM_BUILD_ROOT%{_examplesdir}/%{name}
 
 %{__make} install \
@@ -51,6 +51,7 @@ mv -f $RPM_BUILD_ROOT%{_pixmapsdir}/%{name}/* \
 	$RPM_BUILD_ROOT%{_pixmapsdir}
 
 cp -rf doc/examples/* $RPM_BUILD_ROOT%{_examplesdir}/%{name}
+install doc/*.1 $RPM_BUILD_ROOT%{_mandir}/man1
 
 install %{SOURCE1} $RPM_BUILD_ROOT%{_desktopdir}
 
@@ -64,3 +65,4 @@ rm -rf $RPM_BUILD_ROOT
 %{_desktopdir}/*.desktop
 %{_examplesdir}/%{name}
 %{_pixmapsdir}/*.png
+%{_mandir}/man1/*
