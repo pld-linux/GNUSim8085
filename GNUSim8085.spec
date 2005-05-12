@@ -2,7 +2,7 @@ Summary:	Graphical simulator for the Intel 8085 microprocessor
 Summary(pl):	Graficzny symulator mikroprocesora Intel 8085
 Name:		GNUSim8085
 Version:	1.2.89
-Release:	5
+Release:	6
 License:	GPL
 Group:		Applications/Engineering
 Source0:	http://dl.sourceforge.net/gnusim8085/%{name}-%{version}.tar.bz2
