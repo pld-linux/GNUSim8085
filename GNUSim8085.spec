@@ -31,6 +31,7 @@ dla mikroprocesora Intel 8085.
 %patch0 -p1
 
 %build
+%{__libtoolize}
 %{__gettextize}
 %{__aclocal}
 %{__automake}
