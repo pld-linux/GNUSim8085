@@ -15,6 +15,8 @@ BuildRequires:	autoconf
 BuildRequires:	gettext-devel
 BuildRequires:	gtk+2-devel >= 1:2.0
 BuildRequires:	libgnomeui-devel >= 2.0
+BuildRequires:	libstdc++-devel
+BuildRequires:	libtool
 BuildRequires:	pkgconfig
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
