@@ -3,10 +3,8 @@ Name=GNUSim8085
 Comment=GNUSim8085 - 8085 Microprocessor simulator
 Comment[pl]=GNUSim8085 - Symulator Mikroprocesora 8085
 Exec=gnusim8085
-Icon=gnusim8085_icon.png
+Icon=gnusim8085_icon
 Terminal=false
 Type=Application
-Encoding=UTF-8
 Categories=GTK;GNOME;Utility;Emulator;
 # vi: encoding=utf-8
-
