@@ -12,7 +12,7 @@ Patch0:		%{name}-link.patch
 URL:		http://sourceforge.net/projects/gnusim8085/
 BuildRequires:	automake
 BuildRequires:	autoconf
-BuildRequires:	gettext-devel
+BuildRequires:	gettext-tools
 BuildRequires:	gtk+2-devel >= 1:2.0
 BuildRequires:	libgnomeui-devel >= 2.0
 BuildRequires:	libstdc++-devel
